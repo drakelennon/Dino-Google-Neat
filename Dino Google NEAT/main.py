@@ -493,10 +493,10 @@ def eval_genomes(genomes, config):
                                                           inimigo.rect.topleft), distance(dinossauro.rect.topright,
                                                           inimigo.rect.bottomleft)))
 
-            if output[0] > .7 and dinossauro.rect.y == dinossauro.Y_POS:
+            if output[0] > .9 and dinossauro.rect.y == dinossauro.Y_POS:
                 dinossauro.dino_pula = True
                 dinossauro.dino_corre = False
-            elif output[1] > .7 and dinossauro.rect.y >= dinossauro.Y_POS:
+            elif output[1] > .9 and dinossauro.rect.y >= dinossauro.Y_POS:
                 dinossauro.dino_abaixa = True
                 dinossauro.dino_corre = False
             # elif output[1] <= .7 and output[0] <= .7:
